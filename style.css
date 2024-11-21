@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/015/original/pexels-bella-white-201200-635279.jpg?1732162031");
+    font-family: "Roboto", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ff895d;
+}
+
+/* Weather App Container */
+.weather-app {
+    background: white;
+    max-width: 600px;
+    margin: 45px auto;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid #f9f7fe;
+    padding: 0 0 30px 0;
+}
+
+/* Search Form */
+.search-form-input {
+    background-color: #f9f7fe;
+    border: none;
+    border-radius: 6px;
+    width: 80%;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.search-form-button {
+    background: #ff895d;
+    padding: 15px 30px;
+    border: none;
+    font-size: 16px;
+    margin-left: 5px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-form-button:hover {
+    background-color: white;
+    color: #ff895d;
+}
+
+/* Main Content */
+main {
+    padding: 30px 0;
+}
+
+.weather-app-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* City and Details */
+.weather-app-city {
+    margin: 0;
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.weather-app-details {
+    font-size: 16px;
+    color: rgba(39, 33, 66, 0.4);
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.weather-app-details strong {
+    color: #f65282;
+}
+
+/* Temperature Section */
+.weather-app-temperature-container {
+    display: flex;
+    align-items: center;
+}
+
+.weather-app-icon {
+    width: 88px;
+    height: 88px;
+}
+
+.weather-app-temperature {
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: bold;
+}
+
+.weather-app-unit {
+    margin-top: 6px;
+    font-size: 28px;
+}
+
+/* Forecast Section */
+.weather-forecast {
+    display: flex;
+    justify-content: space-around;
+    /* Ensures equal spacing between days */
+    gap: 20px;
+    /* Adjusts spacing between forecast columns */
+    margin-top: 20px;
+    padding: 0 10px;
+    /* Adds some padding to the section */
+}
+
+.weather-forecast-item {
+    text-align: center;
+    /* Centers content within each forecast item */
+    flex: 1;
+    /* Ensures all forecast items take up equal space */
+    max-width: 80px;
+    /* Limits the width of each item for consistency */
+}
+
+.weather-forecast-date {
+    font-size: 14px;
+    color: rgba(39, 33, 66, 0.4);
+    margin-bottom: 8px;
+}
+
+.weather-forecast-icon {
+    font-size: 28px;
+    /* Sets a consistent icon size */
+    margin-bottom: 5px;
+}
+
+.weather-forecast-temperatures {
+    font-size: 14px;
+    color: #f65282;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.weather-forecast-temperature-high {
+    font-weight: bold;
+}
+
+.weather-forecast-temperature-low {
+    color: rgba(39, 33, 66, 0.4);
+}
+
+
+/* Footer */
+footer {
+    border-top: 1px solid #f9f7fe;
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .weather-app {
+        padding: 20px;
+    }
+
+    .weather-app-city {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .weather-app-temperature {
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    .search-form-input {
+        width: 70%;
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .search-form-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
